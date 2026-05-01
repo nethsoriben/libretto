@@ -5,10 +5,9 @@ A console TUI for organizing music libraries through structured metadata tags an
 
 
 
-
+flowchart TB
  Architecture + User Flow 
 ```mermaid
-flowchart TB
     Start([Start App]) --> LoadLib[Load Library<br/>15+ Tracks]
     LoadLib --> InitUI[Init BrowserView<br/>Show All Tracks]
     InitUI --> WaitInput{Wait for Keypress}
