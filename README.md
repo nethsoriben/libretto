@@ -6,14 +6,14 @@ A console TUI for organizing music libraries through structured metadata tags an
 
 
 
-Flowchart - System Architecture + User Flow 
+ Architecture + User Flow 
 ```mermaid
 flowchart TB
     Start([Start App]) --> LoadLib[Load Library<br/>15+ Tracks]
     LoadLib --> InitUI[Init BrowserView<br/>Show All Tracks]
     InitUI --> WaitInput{Wait for Keypress}
     
-    WaitInput -->|j/k| Navigate[Move Selection Up/Down<br/>Update Highlight]
+    WaitInpuFlowchart - Systemt -->|j/k| Navigate[Move Selection Up/Down<br/>Update Highlight]
     Navigate --> WaitInput
     
     WaitInput -->|f| AddFilter[Filter Flow:<br/>1. Input field<br/>2. Input operator<br/>3. Input value]
